@@ -122,9 +122,9 @@ abstract class AbstractDriver
     /**
      * Set translatorlator
      *
-     * @param Translator $translator
+     * @param TranslatorInterface $translator
      */
-    public function setTranslator(Translator $translator)
+    public function setTranslator(TranslatorInterface $translator)
     {
         $this->translator = $translator;
     }

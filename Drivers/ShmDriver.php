@@ -42,7 +42,7 @@ class ShmDriver extends AbstractDriver
     /**
      * Constructor shmDriver
      *
-     * @param Translator $translator Translator service
+     * @param TranslatorInterface $translator Translator service
      * @param array      $options    Options driver
      */
     public function __construct($translator, array $options = array())

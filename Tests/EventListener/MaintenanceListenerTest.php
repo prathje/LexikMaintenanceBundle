@@ -333,7 +333,7 @@ class MaintenanceListenerTest extends \PHPUnit_Framework_TestCase
     /**
      * Get Translator
      *
-     * @return \Symfony\Bundle\FrameworkBundle\Translation\Translator
+     * @return \Symfony\Contracts\Translation\TranslatorInterface
      */
     public function getTranslator()
     {

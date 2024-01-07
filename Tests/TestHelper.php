@@ -2,7 +2,7 @@
 
 namespace Lexik\Bundle\MaintenanceBundle\Tests;
 
-use Symfony\Bundle\FrameworkBundle\Translation\Translator;
+use Symfony\Contracts\Translation\TranslatorInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Translation\Formatter\MessageFormatter;
