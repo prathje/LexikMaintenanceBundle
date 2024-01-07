@@ -2,7 +2,7 @@
 
 namespace Lexik\Bundle\MaintenanceBundle\Drivers;
 
-use Symfony\Component\Translation\Translator;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * Abstract class for drivers
@@ -18,7 +18,7 @@ abstract class AbstractDriver
     protected $options;
 
     /**
-     * @var Translator
+     * @var TranslatorInterface
      */
     protected $translator;
 
