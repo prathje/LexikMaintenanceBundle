@@ -151,8 +151,14 @@ class MaintenanceListener
      */
     public function onKernelRequest(RequestEvent $event)
     {
-        if(!$event->isMainRequest()){
-            return;
+        if (!method_exists($event, 'isMainRequest')) {
+            if (!$event->isMasterRequest()) {
+                return;
+            }
+        } else {
+            if(!$event->isMainRequest()){
+                return;
+            }
         }
 
         $request = $event->getRequest();
